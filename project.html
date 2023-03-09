@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="project.css">
+
+
+</head>
+<body>
+  <div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="project.html">Project</a>
+  <a href="contact.html">Contact</a>
+</div>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="https://www.ntaskmanager.com/wp-content/uploads/2020/01/How-to-manage-a-project-2.png" style="width:100%">
+  <div class="text">
+                  <p>Project-1</p>
+                    <p>DIGITAL ILEKTRIKO METRITI<p>
+                    <p>Technologies used :- IOT and ML</p>
+                    <p>Description</p><p>Details about consumption of electricity by every single appliance will be reported to the user on daily,weekly and monthly bases.All the details and statistical calculations will be visible to users on their respective Thingspeak or Adafruit accounts.</p>
+</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="https://www.ntaskmanager.com/wp-content/uploads/2020/01/How-to-manage-a-project-2.png" style="width:100%">
+  <div class="text">
+    <p>Project-2</p>
+            <p>Web application for monitoring and analyzing question difficulty     during quiz/lab/exam</p>
+                    <p>Technologies used :- Python and Django</p>
+                    <p>Description</p>
+                    <p>This web application aims to help instructors provide information about how students are progressing through a lab or exam. This can help instructors in multiple ways. One way is,real time time analysis during the lab itself.Analysis will consist of different types of bar charts, pie charts telling in which questions students are in general struggling and which students are struggling.</p>
+  </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="https://www.ntaskmanager.com/wp-content/uploads/2020/01/How-to-manage-a-project-2.png" style="width:100%">
+  <div class="text">
+    <p>Project-3</p>
+            <p>Recognisation Of Traffic Signs Using CNN & Keras</p>
+                    <p>Technologies used :- Machhine Learning and Pytho</p>
+                    <p>Description</p>
+                    <p>Self-driving cars or Driverless cars are widely used nowadays.Our objective is to develop a model that automatically detects traffic signs even though they are unclear or tampered.There are several different types of traffic signs and each of them have different meanings.Hence this model is used to identify those traffic signs and make decisions according to those signs in self driving cars.</p>
+  </div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html> 
